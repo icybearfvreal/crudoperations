@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Title-->
+    <title>CRUD-JS</title>
+     <!-- CSS File-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Table-->
+    <table>
+        <!--Row-1-->
+        <tr>
+            <!--Column-1-->
+            <td>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                  <!--div-1-->
+                    <div>
+                        <label>Item Name</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="Enter the item name">
+                    </div>
+                    <!--div-2-->
+                    <div>
+                        <label>Item no.</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="rollNovalidationError" >This field is required</label>
+                        <!--Input Roll No-->
+                        <input type="text" name="rollNo" id="rollNo" placeholder="Enter the item number">
+                    </div>
+                    <!--div-3-->
+                    <div>
+                        <label>Purchase price</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="stdClassvalidationError">This field is required</label>
+                       <!--Input Student Class-->
+                        <input type="text" name="stdClass" id="stdClass" placeholder="Enter the purchased price">
+                    </div>
+                    <!--div-4-->
+                    <div>
+                        <label>Quantity</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="tsubvalidationError">This field is required</label>
+                        <!--Input Total Subject-->
+                        <input type="number" name="tsub" id="tsub" placeholder="Enter the quantity purchased">
+                    </div>
+                    <!--div-5-->
+                    <div>
+                        <label>Time purchased</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="agevalidationError">This field is required</label>
+                        <!--Input Age-->
+                        <input type="time" name="age" id="age" placeholder="Enter the Age">
+                    </div>
+                    <!--div-6-->
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <!--Column-2-->
+            <td>
+                <!--Nested Table-->
+                <table class="list" id="stdlist">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>Item Name</th>
+                            <th> Item no.</th>
+                            <th>Purchase price</th>
+                            <th>Quantity</th>
+                            <th>Time purchased</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- JS File-->
+    <script src="JS/script.js"></script>
+</body>
+</html>
